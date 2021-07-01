@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM nginx:alpine
 RUN apk add openjdk8
 WORKDIR /app
 COPY .mvn/ .mvn
