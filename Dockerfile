@@ -1,5 +1,5 @@
 FROM ubuntu
-RUN apt update && apt install nginx && apk add openjdk8
+RUN apk add openjdk8
 WORKDIR /app
 COPY .mvn/ .mvn
 COPY mvnw pom.xml ./
